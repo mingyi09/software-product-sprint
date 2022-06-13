@@ -16,43 +16,82 @@
      </p>
 
      <img src="images/self.jpeg"
-          width="200"
-          height="200"/>
+          class="center"/>
+    <div id="para1">
      <p>I love creating and writing stories. As a photography beginner, I try to record many interesting moments in life</p>
+    </div>
 
-   
-     <p>
-        <i>Glide to Tomorrow</i>
-     </p>
-     <img src="images/glide.png"
-          width="300"
-          height="270"/>
+    <div class="gallery">
+        <a target="_blank" href="images/glide.png">
+            <img src="images/glide.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Glide to Tomorrow</div>
+    </div>
 
-     <p>
-        <i>Dancing fire</i>
-     </p>
-     <img src="images/fire.png"
-          width="300"
-          height="270"/>
-    
-     <p>
-        <i>To the left, To the right</i>
-     </p>
-     <img src="images/sea.png"
-          width="300"
-          height="270"/>
+    <div class="gallery">
+        <a target="_blank" href="images/fire.png">
+            <img src="images/fire.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Dancing fire</div>
+    </div>
 
-     <p>
-        <i>Sea Flowers</i>
-     </p>
-     <img src="images/jellyfish.png"
-          width="300"
-          height="270"/>
+    <div class="gallery">
+        <a target="_blank" href="images/sea.png">
+            <img src="images/sea.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">To the left, To the right</div>
+    </div>
 
+    <!--next section-->
+    <div id="para1">
+        <p> I love to try new things, such as exhausted but fun sports.</p>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="images/paragliding.jpg">
+            <img src="images/paragliding.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Paragliding</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="images/skiing.png">
+            <img src="images/skiing.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Skiing</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="images/hiking.png">
+            <img src="images/hiking.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Hiking</div>
+    </div>
+
+    <!--Below is greeting and form-->
+    <div id="para1">
      <p>Click :) to get a random fun fact about myself:</p>
-     <button onclick="addRandomGreeting()">:)</button>
+     <button onclick="addRandomGreeting()">A Random Mystery :)</button>
      <div id="greeting-container"></div>
+    </div>
+
+    <div id="para1">
+     <p>Write some random things for fun and press "ENTER"</p>
+     <input type="search" id="theInput" onsearch="sayHello()">
+     <p id="words"></p>
+    </div>
+    
+    <form action="/form-handler" method="POST" id="contact">
+        <p>If you have additional questions or concerns,</p>
+        <p>Feel free to reach out by sending me your messages!</p>
+        <textarea name="text-input"></textarea>
+        <br/>
+        <input type="submit"/>
+     </form>
+
    </div>
+
+
  </body>
 </html>
 
