@@ -30,3 +30,9 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function sayHello(){
+    var text = document.getElementById("theInput");
+    /*document.getElementById("words").innerHTML = "You are writing: "+ text.nodeValue;*/
+    document.getElementById("words").innerHTML = "Have a good day!";
+}
