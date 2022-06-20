@@ -33,6 +33,26 @@ function addRandomGreeting() {
 
 function sayHello(){
     var text = document.getElementById("theInput");
-    /*document.getElementById("words").innerHTML = "You are writing: "+ text.nodeValue;*/
-    document.getElementById("words").innerHTML = "Have a good day!";
+    //document.getElementById("words").innerHTML = "You are writing: "+ text.nodeValue;
+    document.getElementById("words").innerText = "Have a good day!";
+}
+
+function translateIt(){
+    const text = document.getElementById("sentence").value;
+    const languageCode = document.getElementById("lang").value;
+
+    const resultContainer = document.getElementById("result");
+    resultContainer.innerText = "Loading...";    
+
+    const params = new URLSearchParams();
+    params.append('text', text);
+    params.append('languageCode', languageCode);
+
+    fetch('/translate', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+      resultContainer.innerHTML = translatedMessage;
+    });
 }

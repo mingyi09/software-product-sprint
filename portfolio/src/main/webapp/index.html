@@ -25,47 +25,47 @@
         <a target="_blank" href="images/glide.png">
             <img src="images/glide.png" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Glide to Tomorrow</div>
+        <div class="gallery_content">Glide to Tomorrow</div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="images/fire.png">
             <img src="images/fire.png" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Dancing fire</div>
+        <div class="gallery_content">Dancing fire</div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="images/sea.png">
             <img src="images/sea.png" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">To the left, To the right</div>
+        <div class="gallery_content">To the left, To the right</div>
     </div>
 
     <!--next section-->
     <div id="para1">
-        <p> I love to try new things, such as exhausted but fun sports.</p>
+        <p> In my free time, I love to try new things, such as exhausting but also fun sports.</p>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="images/paragliding.jpg">
             <img src="images/paragliding.jpg" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Paragliding</div>
+        <div class="gallery_content">Paragliding</div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="images/skiing.png">
             <img src="images/skiing.png" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Skiing</div>
+        <div class="gallery_content">Skiing</div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="images/hiking.png">
             <img src="images/hiking.png" alt="Cinque Terre" width="600" height="400">
         </a>
-        <div class="desc">Hiking</div>
+        <div class="gallery_content">Hiking</div>
     </div>
 
     <!--Below is greeting and form-->
@@ -81,6 +81,26 @@
      <p id="words"></p>
     </div>
     
+    <div id = "para1">
+        <p>Type a message and then translate it to another language you select.</p>
+       
+       
+        <textarea id="sentence"></textarea>
+    
+        <select id="lang">
+          <option value="es">English</option>
+          <option value="zh">Chinese</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="it">Italian</option>
+        </select>
+    
+        <button onclick="translateIt()">Translate</button>
+        <div id="result"></div>
+    </div>
+
     <form action="/form-handler" method="POST" id="contact">
         <p>If you have additional questions or concerns,</p>
         <p>Feel free to reach out by sending me your messages!</p>
@@ -90,8 +110,7 @@
      </form>
 
    </div>
-
-
+    
  </body>
 </html>
 
